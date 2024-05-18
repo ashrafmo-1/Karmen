@@ -1,0 +1,4 @@
+next
+tailwind
+array, object
+https://www.framer.com/motion/
