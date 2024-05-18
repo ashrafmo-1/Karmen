@@ -8,20 +8,13 @@ import Catigory_controller from "./components/catigory_controller/catigory_contr
 
 export const metadata = {
   title: "Karmen",
-  description: "technical exam rmoz tecnologie",
+  description: "technical exam rmoz tecno",
 };
 export default function RootLayout({
   children
 }: {
   children: React.ReactNode;
 }) {
-
-  const allCe = () => {
-    if (window.location.pathname === "/") {
-      console.log('/;;;;;;;;;;;;');
-      
-    }
-  }
   return (
     <html lang="en">
       <body>

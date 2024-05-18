@@ -20,6 +20,7 @@ import Caterories_btn from "../components/categories_btn/caterories_btn";
 
 import gold from "../assets/Gold Rings/Gold Rings 5.jpg";
 import stacking from "../assets/stacking rings/stacking rings 3.jpg";
+import Link from "next/link";
 
 const products = [
   { name: "Silver Rings", price: "1000", image: product_1 },
@@ -59,7 +60,7 @@ const page = () => {
                 <Image src={stars} width={20} alt="" />
               </div>
               <p className="salary">{prod.price}</p>
-              <Btncart />
+              <Link href={"/"} className="cart">Add to Cart</Link>
             </div>
           </div>
         ))}

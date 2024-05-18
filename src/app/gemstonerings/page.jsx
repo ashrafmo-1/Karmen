@@ -14,7 +14,7 @@ import product_9 from "../assets/gemstone rings/gemstone rings 9.jpg";
 import product_10 from "../assets/gemstone rings/gemstone rings 10.jpg";
 import product_11 from "../assets/gemstone rings/gemstone rings 11.jpg";
 import product_12 from "../assets/gemstone rings/gemstone rings 12.jpg";
-import Btncart from "../components/addCartBtn/btncart";
+import Link from "next/link";
 
 const products = [
   { name: "Silver Rings", price: "1000", image: product_1 },
@@ -48,7 +48,7 @@ const page = () => {
                 <Image src={stars} width={20} alt="" />
               </div>
               <p className="salary">{prod.price}</p>
-                <Btncart />
+              <Link href={"/"} className="cart">Add to Cart</Link>
             </div>
           </div>
         ))}

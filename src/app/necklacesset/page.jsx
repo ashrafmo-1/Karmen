@@ -13,7 +13,7 @@ import product_7 from "../assets/necklacesset/necklacesset7.jpg";
 import product_8 from "../assets/necklacesset/necklacesset8.jpg";
 import product_9 from "../assets/necklacesset/necklacesset9.jpg";
 import product_10 from "../assets/necklacesset/necklacesset10.jpg";
-import Btncart from "../components/addCartBtn/btncart";
+import Link from "next/link";
 
 
 const products = [
@@ -46,7 +46,7 @@ const page = () => {
                 <Image src={stars} width={20} alt="" />
               </div>
               <p className="salary py-1">{prod.price}</p>
-              <Btncart />
+              <Link href={"/"} className="cart">Add to Cart</Link>
             </div>
           </div>
         ))}

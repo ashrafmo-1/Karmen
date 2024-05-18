@@ -3,7 +3,6 @@ import "../globals.css";
 import Image from "next/image";
 import stars from "../../../public/star.png";
 // import Caterories_btn from "../components/categories_btn/caterories_btn"; note use in sub pages
-import Btncart from "../components/addCartBtn/btncart"
 
 import product_1 from "../assets/Gold Necklaces/GoldNecklaces1.jpg";
 import product_2 from "../assets/Gold Necklaces/GoldNecklaces2.jpg";
@@ -19,6 +18,7 @@ import product_11 from "../assets/Gold Necklaces/GoldNecklaces11.jpg";
 import product_12 from "../assets/Gold Necklaces/GoldNecklaces12.jpg";
 import product_13 from "../assets/Gold Necklaces/GoldNecklaces13.jpg";
 import product_14 from "../assets/Gold Necklaces/GoldNecklaces14.jpg";
+import Link from "next/link";
 
 const products = [
   { name: "Silver Necklaces", price: "1000", image: product_1 },
@@ -55,7 +55,7 @@ const page = () => {
                 <Image src={stars} width={20} alt="" />
               </div>
               <p className="salary">{prod.price}</p>
-              <Btncart />
+              <Link href={"/"} className="cart">Add to Cart</Link>
             </div>
           </div>
         ))}

@@ -10,7 +10,7 @@ import product_5 from "../assets/stacking rings/stacking rings 8.jpg";
 import product_6 from "../assets/stacking rings/stacking rings 9.jpg";
 import product_7 from "../assets/stacking rings/stacking rings 10.jpg";
 import product_8 from "../assets/stacking rings/stacking rings 11.jpg";
-import Btncart from "../components/addCartBtn/btncart";
+import Link from "next/link";
 
 const products = [
   { name: "Silver Rings", price: "1000", image: product_1 },
@@ -41,7 +41,7 @@ const page = () => {
                 <Image src={stars} width={20} alt="" />
               </div>
               <p className="salary">{prod.price}</p>
-              <Btncart />
+              <Link href={"/"} className="cart">Add to Cart</Link>
             </div>
           </div>
         ))}

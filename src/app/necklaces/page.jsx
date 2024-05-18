@@ -20,7 +20,7 @@ import product_14 from "../assets/necklaces/Necklaces14.jpg";
 import gold from "../assets/Gold Rings/Gold Rings 5.jpg";
 import stacking from "../assets/stacking rings/stacking rings 3.jpg";
 import gemstone from "../assets/gemstone rings/gemstone rings 7.jpg";
-import Btncart from "../components/addCartBtn/btncart";
+import Link from "next/link";
 
 const products = [
   { name: "Silver Necklaces", price: "1000", image: product_1 },
@@ -62,7 +62,7 @@ const page = () => {
                 <Image src={stars} width={20} alt="" />
               </div>
               <p className="salary py-1">{prod.price}</p>
-              <Btncart />
+              <Link href={"/"} className="cart">Add to Cart</Link>
             </div>
           </div>
         ))}

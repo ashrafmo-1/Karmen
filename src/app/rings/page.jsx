@@ -14,12 +14,11 @@ import product_10 from "../assets/home/home 10.jpg";
 import product_11 from "../assets/home/home 11.jpeg";
 import product_12 from "../assets/home/home 12.jpeg";
 import product_13 from "../assets/home/home 13.jpg";
-// import Link from "next/link"; not used
 import gold from "../assets/Gold Rings/Gold Rings 5.jpg";
 import stacking from "../assets/stacking rings/stacking rings 3.jpg";
 import gemstone from "../assets/gemstone rings/gemstone rings 7.jpg";
 import Caterories_btn from "../components/categories_btn/caterories_btn";
-import Btncart from "../components/addCartBtn/btncart";
+import Link from "next/link";
 
 const products = [
   { name: "Gold Rings", price: "1000", image: product_1 },
@@ -61,7 +60,7 @@ export default function Home() {
                 <Image src={stars} width={20} alt="" />
               </div>
               <p className="salary">{prod.price}</p>
-              <Btncart />
+              <Link href={"/"} className="cart">Add to Cart</Link>
             </div>
           </div>
         ))}
